@@ -1,52 +1,39 @@
-import React, {useRef} from 'react';
-import {Animated, View, StyleSheet, PanResponder, Text} from 'react-native';
+import React from 'react';
+import {View, Text} from 'react-native';
+import {Icon} from '@rneui/themed';
 
-const App = () => {
-  const pan = useRef(new Animated.ValueXY()).current;
-  const panResponder = useRef(
-    PanResponder.create({
-      onMoveShouldSetPanResponder: () => true,
-      onPanResponderMove: Animated.event([null, {dx: pan.x, dy: pan.y}]),
-      onPanResponderRelease: () => {
-        Animated.spring(pan, {
-          toValue: {x: 0, y: 0},
-          useNativeDriver: true,
-        }).start();
-      },
-    }),
-  ).current;
-
+export default () => {
   return (
-    <View style={styles.container}>
-      <Text style={styles.titleText}>Drag & Release this box!</Text>
-      <Animated.View
+    <>
+      <View
         style={{
-          transform: [{translateX: pan.x}, {translateY: pan.y}],
-        }}
-        {...panResponder.panHandlers}>
-        <View style={styles.box} />
-      </Animated.View>
-    </View>
+          alignItems: 'center',
+          paddingVertical: 5,
+          flexGrow: 1,
+        }}>
+        <Text>
+          <Icon name="rowing" />
+
+          <Icon name="g-translate" color="#00aced" />
+
+          <Icon name="sc-telegram" type="evilicon" color="#517fa4" />
+
+          <Icon
+            reverse
+            name="ios-american-football"
+            type="ionicon"
+            color="#517fa4"
+          />
+
+          <Icon
+            raised
+            name="heartbeat"
+            type="font-awesome"
+            color="#f50"
+            onPress={() => console.log('hello')}
+          />
+        </Text>
+      </View>
+    </>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  titleText: {
-    fontSize: 14,
-    lineHeight: 24,
-    fontWeight: 'bold',
-  },
-  box: {
-    height: 150,
-    width: 150,
-    backgroundColor: 'blue',
-    borderRadius: 5,
-  },
-});
-
-export default App;
