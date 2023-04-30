@@ -9,28 +9,6 @@
       "request": "attach",
       "type": "reactnative",
       "cwd": "${workspaceFolder}"
-    },
-
-    {
-      "name": "Attach to Hermes application - Experimental",
-      "request": "attach",
-      "type": "reactnativedirect",
-      "cwd": "${workspaceFolder}",
-      "port": 8081
-    },
-    {
-      "name": "Debug Android Hermes - Experimental",
-      "request": "launch",
-      "type": "reactnativedirect",
-      "cwd": "${workspaceFolder}",
-      "platform": "android"
-    },
-    {
-      "name": "Debug Android",
-      "request": "launch",
-      "type": "reactnative",
-      "cwd": "${workspaceFolder}",
-      "platform": "android"
     }
   ]
 }
