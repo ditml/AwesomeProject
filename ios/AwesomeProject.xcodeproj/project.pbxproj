@@ -14,6 +14,11 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-AwesomeProject-AwesomeProjectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-AwesomeProject-AwesomeProjectTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		7561C6C26DA3423DA6D1E0F1 /* elephants.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 59FB8248B1184A39BFB7CC19 /* elephants.jpg */; };
+		AE520DCC8E5E46BF898367DD /* oh_vaana_padithe.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70951B6059784C27B768983A /* oh_vaana_padithe.mp3 */; };
+		8AA61B46CF1345C29631688D /* abc.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 7C0DD2ADCF9A41448C4429A4 /* abc.pdf */; };
+		DE973EB7AFD94C35B0378F76 /* manasa_veena.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 3E0E4CC52D54471994C0FF1B /* manasa_veena.mp4 */; };
+		2D1DD3ECD44E49AEA8A11446 /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = A67A05B4776F4543971476A9 /* text.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +49,11 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AwesomeProject/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; path = "Target Support Files/Pods-AwesomeProject-AwesomeProjectTests/Pods-AwesomeProject-AwesomeProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		59FB8248B1184A39BFB7CC19 /* elephants.jpg */ = {isa = PBXFileReference; name = "elephants.jpg"; path = "../assets/img/elephants.jpg"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		70951B6059784C27B768983A /* oh_vaana_padithe.mp3 */ = {isa = PBXFileReference; name = "oh_vaana_padithe.mp3"; path = "../assets/audio/oh_vaana_padithe.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7C0DD2ADCF9A41448C4429A4 /* abc.pdf */ = {isa = PBXFileReference; name = "abc.pdf"; path = "../assets/pdf/abc.pdf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3E0E4CC52D54471994C0FF1B /* manasa_veena.mp4 */ = {isa = PBXFileReference; name = "manasa_veena.mp4"; path = "../assets/video/manasa_veena.mp4"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A67A05B4776F4543971476A9 /* text.txt */ = {isa = PBXFileReference; name = "text.txt"; path = "../assets/doc/text.txt"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				36F0D2624AD14F12AE381DE0 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +158,19 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		36F0D2624AD14F12AE381DE0 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				59FB8248B1184A39BFB7CC19 /* elephants.jpg */,
+				70951B6059784C27B768983A /* oh_vaana_padithe.mp3 */,
+				7C0DD2ADCF9A41448C4429A4 /* abc.pdf */,
+				3E0E4CC52D54471994C0FF1B /* manasa_veena.mp4 */,
+				A67A05B4776F4543971476A9 /* text.txt */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -244,6 +268,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				7561C6C26DA3423DA6D1E0F1 /* elephants.jpg in Resources */,
+				AE520DCC8E5E46BF898367DD /* oh_vaana_padithe.mp3 in Resources */,
+				8AA61B46CF1345C29631688D /* abc.pdf in Resources */,
+				DE973EB7AFD94C35B0378F76 /* manasa_veena.mp4 in Resources */,
+				2D1DD3ECD44E49AEA8A11446 /* text.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

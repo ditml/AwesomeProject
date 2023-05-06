@@ -1,0 +1,25 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/img/elephants.jpg",
+      "sha1": "ab907d56dc86110af43a771e13c7efb7e9ce0002"
+    },
+    {
+      "path": "assets/pdf/abc.pdf",
+      "sha1": "90ffd2359008d82298821d16b21778c5c39aec36"
+    },
+    {
+      "path": "assets/audio/oh_vaana_padithe.mp3",
+      "sha1": "2f6bdf875efad609dcad772146841c94044b484c"
+    },
+    {
+      "path": "assets/video/manasa_veena.mp4",
+      "sha1": "ebc80694bb39dd62fedcbc4689f2cad8dba62efc"
+    },
+    {
+      "path": "assets/doc/text.txt",
+      "sha1": "9e472f09082bb797429d07545c323836b7d175c0"
+    }
+  ]
+}
