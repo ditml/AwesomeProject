@@ -10,17 +10,22 @@ import React from 'react';
 // import Network from './src/Network/Network';
 // import Nettest from './src/Network/Nettest';
 
-import {ApolloProvider} from '@apollo/client';
-import client from './src/api_client_gql/client_gql';
-import Apitest from './src/api_client_gql/Apitest';
+// import {ApolloProvider} from '@apollo/client';
+// import client from './src/api_client_gql/client_gql';
+// import Apitest from './src/api_client_gql/Apitest';
+
+import WhatsApp from './src/whatsapp/WhatsApp';
 
 export default function App() {
   // return <Network />;
   // return <Nettest />;
 
-  return (
-    <ApolloProvider client={client}>
-      <Apitest />
-    </ApolloProvider>
-  );
+  // return (
+    // <ApolloProvider client={client}>
+    // { <Apitest /> }
+    // </ApolloProvider>
+    // </>
+  // );
+
+  return <WhatsApp/>;
 }

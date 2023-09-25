@@ -26,8 +26,8 @@ function Apitest() {
     );
   }
 
-  //   const users = JSON.stringify(data.users[1].user_name);
-  //   console.log(`data ${users}`);
+    // const users = JSON.stringify(data.users[1].user_name);   // TEST
+    // console.log(`data ${users}`);
   return (
     <FlatList
       data={data.users}
