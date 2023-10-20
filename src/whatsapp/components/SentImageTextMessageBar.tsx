@@ -2,9 +2,10 @@ import React from 'react';
 import {Text, View, StyleSheet, Image, ScrollView} from 'react-native';
 import IconMatCom from 'react-native-vector-icons/MaterialCommunityIcons';
 
-import RefferenceMessage, {RefferenceImageMessage, RefferenceVideoMessage} from './RefferenceMessage';
+import RefferenceMessage from './RefferenceMessage';
 
 import {SvgXml} from 'react-native-svg';
+import ImageBox from './ImageBox';
 
 const styles = StyleSheet.create({
   container: {
@@ -217,7 +218,7 @@ const SentMessageBar_ = () => {
   );
 };
 
-const SentTextReferTextMessageBar = () => {
+const SentImageTextMessageBar = () => {
   return (
     <View // Recieved Message Bar
       style={{
@@ -225,7 +226,7 @@ const SentTextReferTextMessageBar = () => {
         display: 'flex',
         flexDirection: 'row',
         // flexGrow: 1,
-        maxWidth: "80%", 
+        maxWidth: '70%',
         // height: 100,
         justifyContent: 'flex-end',
         alignContent: 'flex-end',
@@ -243,12 +244,13 @@ const SentTextReferTextMessageBar = () => {
           flexWrap: 'wrap',
           // flex: 1,
           flexDirection: 'column',
-          flexGrow: 1,
+          // flexGrow: 1,
+          flexShrink: 1,
           // maxWidth: '85%',
           // paddingBottom: 5,
           // paddingTop: 5,
-          paddingLeft: 12,
-          paddingRight: 12,
+        //   paddingLeft: 12,
+        //   paddingRight: 12,/
           // height: 35,
           justifyContent: 'center',
           alignContent: 'center',
@@ -263,10 +265,11 @@ const SentTextReferTextMessageBar = () => {
             display: 'flex',
             // flexWrap: 'wrap',
             flexDirection: 'column',
-            flexGrow: 1,
+            // flexGrow: 1,
+            flexShrink: 1,
             // width: '100%',
             // paddingBottom: 0,
-            paddingTop: 8,
+            // paddingTop: 8,
             // paddingLeft: 12,
             // paddingRight: 7,
             // height: 35,
@@ -283,20 +286,21 @@ const SentTextReferTextMessageBar = () => {
             <View
               style={{
                 // backgroundColor: 'pink',
-                // padding: 10,
+                padding: 4,
                 // flexGrow: 1,
+                // flexShrink: 1,
 
                 display: 'flex',
                 flexDirection: 'column',
               }}>
-              <View style={{left: -6}}>
-                <RefferenceMessage />
+              <View style={{left: 0}}>
+                <ImageBox />
               </View>
 
               <View // Message Box - Bottom
                 style={{
                   //   backgroundColor: 'red',
-                  // padding: 5,
+                //   padding: 5,
 
                   display: 'flex',
                   flexDirection: 'column',
@@ -322,10 +326,10 @@ const SentTextReferTextMessageBar = () => {
                       // flexDirection: 'column',
                       // flexGrow: 1,
                       // width: '80%',
-                      // padding: 8,
+                      padding: 4,
                       // paddingLeft: 0,
                       paddingBottom: 6,
-                      paddingTop: 6,
+                      paddingTop: 4,
                     }}>
                     <Text
                       // numberOfLines={5}
@@ -333,6 +337,7 @@ const SentTextReferTextMessageBar = () => {
                         flexWrap: 'wrap',
                         fontSize: 16,
                         textAlign: 'justify',
+                        color: 'black',
                       }}>
                       @Varun Bhavani hi there I am here now as you can see, and
                       I am new here , so please hi there I am here now as you
@@ -440,7 +445,7 @@ const SentTextReferTextMessageBar = () => {
   );
 };
 
-export const SentTextReferImageTextMessageBar = () => {
+export const SentVideoTextMessageBar = () => {
   return (
     <View // Recieved Message Bar
       style={{
@@ -448,7 +453,7 @@ export const SentTextReferImageTextMessageBar = () => {
         display: 'flex',
         flexDirection: 'row',
         // flexGrow: 1,
-        maxWidth: "80%", 
+        maxWidth: '70%',
         // height: 100,
         justifyContent: 'flex-end',
         alignContent: 'flex-end',
@@ -466,12 +471,13 @@ export const SentTextReferImageTextMessageBar = () => {
           flexWrap: 'wrap',
           // flex: 1,
           flexDirection: 'column',
-          flexGrow: 1,
+          // flexGrow: 1,
+          flexShrink: 1,
           // maxWidth: '85%',
           // paddingBottom: 5,
           // paddingTop: 5,
-          paddingLeft: 12,
-          paddingRight: 12,
+        //   paddingLeft: 12,
+        //   paddingRight: 12,/
           // height: 35,
           justifyContent: 'center',
           alignContent: 'center',
@@ -486,10 +492,11 @@ export const SentTextReferImageTextMessageBar = () => {
             display: 'flex',
             // flexWrap: 'wrap',
             flexDirection: 'column',
-            flexGrow: 1,
+            // flexGrow: 1,
+            flexShrink: 1,
             // width: '100%',
             // paddingBottom: 0,
-            paddingTop: 8,
+            // paddingTop: 8,
             // paddingLeft: 12,
             // paddingRight: 7,
             // height: 35,
@@ -506,20 +513,21 @@ export const SentTextReferImageTextMessageBar = () => {
             <View
               style={{
                 // backgroundColor: 'pink',
-                // padding: 10,
+                padding: 4,
                 // flexGrow: 1,
+                // flexShrink: 1,
 
                 display: 'flex',
                 flexDirection: 'column',
               }}>
-              <View style={{left: -6}}>
-                <RefferenceImageMessage />
+              <View style={{left: 0}}>
+                <ImageBox />
               </View>
 
               <View // Message Box - Bottom
                 style={{
                   //   backgroundColor: 'red',
-                  // padding: 5,
+                //   padding: 5,
 
                   display: 'flex',
                   flexDirection: 'column',
@@ -545,10 +553,10 @@ export const SentTextReferImageTextMessageBar = () => {
                       // flexDirection: 'column',
                       // flexGrow: 1,
                       // width: '80%',
-                      // padding: 8,
+                      padding: 4,
                       // paddingLeft: 0,
                       paddingBottom: 6,
-                      paddingTop: 6,
+                      paddingTop: 4,
                     }}>
                     <Text
                       // numberOfLines={5}
@@ -556,6 +564,7 @@ export const SentTextReferImageTextMessageBar = () => {
                         flexWrap: 'wrap',
                         fontSize: 16,
                         textAlign: 'justify',
+                        color: 'black',
                       }}>
                       @Varun Bhavani hi there I am here now as you can see, and
                       I am new here , so please hi there I am here now as you
@@ -663,227 +672,5 @@ export const SentTextReferImageTextMessageBar = () => {
   );
 };
 
-export const SentTextReferVideoTextMessageBar = () => {
-  return (
-    <View // Recieved Message Bar
-      style={{
-        // backgroundColor: '#00000000',
-        display: 'flex',
-        flexDirection: 'row',
-        // flexGrow: 1,
-        maxWidth: "80%", 
-        // height: 100,
-        justifyContent: 'flex-end',
-        alignContent: 'flex-end',
-        alignItems: 'flex-end',
-        // paddingTop: 10,
-        // paddingBottom: 10,
-        paddingRight: 10,
-        // paddingLeft: 8,
-      }}>
-      <View // Container Box
-        style={{
-          // backgroundColor: 'white',
-          backgroundColor: '#c9ffad',
-          display: 'flex',
-          flexWrap: 'wrap',
-          // flex: 1,
-          flexDirection: 'column',
-          flexGrow: 1,
-          // maxWidth: '85%',
-          // paddingBottom: 5,
-          // paddingTop: 5,
-          paddingLeft: 12,
-          paddingRight: 12,
-          // height: 35,
-          justifyContent: 'center',
-          alignContent: 'center',
-          alignItems: 'center',
-          borderRadius: 12,
-          borderTopRightRadius: 0,
-        }}>
-        <View // Total Box
-          style={{
-            // backgroundColor: 'white',
-            // backgroundColor: '#c9ffad',
-            display: 'flex',
-            // flexWrap: 'wrap',
-            flexDirection: 'column',
-            flexGrow: 1,
-            // width: '100%',
-            // paddingBottom: 0,
-            paddingTop: 8,
-            // paddingLeft: 12,
-            // paddingRight: 7,
-            // height: 35,
-            // width: '85%',
-            justifyContent: 'center',
-            alignContent: 'center',
-            alignItems: 'center',
-            alignSelf: 'flex-start',
+export default SentImageTextMessageBar;
 
-            borderRadius: 12,
-            borderTopLeftRadius: 0,
-          }}>
-          <View>
-            <View
-              style={{
-                // backgroundColor: 'pink',
-                // padding: 10,
-                // flexGrow: 1,
-
-                display: 'flex',
-                flexDirection: 'column',
-              }}>
-              <View style={{left: -6}}>
-                <RefferenceVideoMessage />
-              </View>
-
-              <View // Message Box - Bottom
-                style={{
-                  //   backgroundColor: 'red',
-                  // padding: 5,
-
-                  display: 'flex',
-                  flexDirection: 'column',
-                  // flexGrow: 1,
-                  // paddingBottom: 0,
-                }}>
-                <View
-                  style={
-                    {
-                      // backgroundColor: 'green',
-                      // flexWrap: 'wrap',
-                      // flexShrink: 1,
-                      // flexDirection: 'row',
-                      // flexGrow: 1,
-                      // maxWidth: '70%',
-                    }
-                  }>
-                  <View
-                    style={{
-                      //   backgroundColor: 'green',
-                      // flexWrap: 'wrap',
-                      // flexShrink: 1,
-                      // flexDirection: 'column',
-                      // flexGrow: 1,
-                      // width: '80%',
-                      // padding: 8,
-                      // paddingLeft: 0,
-                      paddingBottom: 6,
-                      paddingTop: 6,
-                    }}>
-                    <Text
-                      // numberOfLines={5}
-                      style={{
-                        flexWrap: 'wrap',
-                        fontSize: 16,
-                        textAlign: 'justify',
-                      }}>
-                      @Varun Bhavani hi there I am here now as you can see, and
-                      I am new here , so please hi there I am here now as you
-                      can see, and I am new here , so please hi there I am here
-                      now as you can see, and I am new here , so please and  a 
-                      <Text
-                        style={{
-                          flexWrap: 'wrap',
-                          fontSize: 16,
-                          color: '#00000000'
-                        }}>
-                        _ ___________
-                      </Text>
-                    </Text>
-                  </View>
-                </View>
-
-                <View
-                  style={{
-                    // backgroundColor: 'pink',
-                    // flexWrap: 'wrap',
-                    flexDirection: 'row',
-                    // flexGrow: 1,
-                    // maxWidth: '22%',
-                    justifyContent: 'flex-end',
-                    alignContent: 'flex-end',
-                    alignSelf: 'flex-end',
-
-                    // bottom: 8,
-                    // display: 'none',
-                  }}>
-                  <View
-                    style={{
-                      // backgroundColor: 'teal',
-                      // flexWrap: 'wrap',
-                      // maxWidth: '22%',
-                      // justifyContent: 'flex-end',
-                      // alignContent: 'flex-end',
-                      // alignSelf: 'flex-end',
-
-                      // bottom: 8,
-                      // position: 'absolute',
-                      // paddingBottom: 4,
-                      height: 7,
-                    }}>
-                    <Text
-                      style={{
-                        fontSize: 16,
-                        // alignSelf: 'flex-end',
-                        // textAlign: 'right',
-                        textAlignVertical: 'top',
-                        // flexWrap: 'wrap',
-                        top: -20,
-                        height: 22,
-
-                        // paddingBottom: 4,
-                        marginRight: 4,
-                      }}>
-                      8:08 pm
-                    </Text>
-                  </View>
-
-                  <View // Ticks
-                    style={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      flexWrap: 'wrap',
-                      // flexGrow: 1,
-                      justifyContent: 'center',
-                      alignContent: 'center',
-                      alignItems: 'center',
-                      // backgroundColor: 'yellow',
-                      // height: '100%',
-                      flexShrink: 0,
-                      height: 7,
-                    }}>
-                    <IconMatCom
-                      name="check-all"
-                      style={{
-                        fontSize: 20,
-                        fontWeight: 'bold',
-                        alignSelf: 'flex-end',
-                        verticalAlign: 'bottom',
-                        padding: 2,
-
-                        textAlignVertical: 'bottom',
-                        color: '#046dbe',
-                        // bottom: -7,
-                        top: -10,
-                        height: 20,
-                      }}
-                    />
-                  </View>
-                </View>
-              </View>
-            </View>
-          </View>
-        </View>
-      </View>
-      {/* </View> */}
-      <View style={{position: 'absolute', right: -1, top: 0, zIndex: -1}}>
-        <TriangleRight />
-      </View>
-    </View>
-  );
-};
-
-export default SentTextReferTextMessageBar;

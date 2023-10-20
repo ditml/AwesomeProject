@@ -1,7 +1,9 @@
 import React from 'react';
 import {View, StyleSheet, ScrollView} from 'react-native';
-import SentMessageBar from './SentMessageBar';
-import RecievedMessageBar from './RecievedMessageBar';
+import SentTextReferTextMessageBar, {SentTextReferImageTextMessageBar, SentTextReferVideoTextMessageBar} from './SentMessageBar';
+import RecievedTextReferTextMessageBar from './RecievedMessageBar';
+import SentImageMessageBar, { SentVideoMessageBar } from './SentImageMessageBar';
+import SentImageTextMessageBar, { SentVideoTextMessageBar } from './SentImageTextMessageBar';
 
 export const MessagesList = () => {
   return (
@@ -11,8 +13,44 @@ export const MessagesList = () => {
         display: 'flex',
         flexDirection: 'column',
         // flexGrow: 1,
-        width: '100%',
+        // width: '100%',
       }}>
+      <View
+        style={{
+          backgroundColor: '#FFF',
+          display: 'flex',
+          flexDirection: 'row',
+          flexGrow: 1,
+          width: '100%',
+          justifyContent: 'flex-end',
+          alignContent: 'flex-end',
+          alignItems: 'flex-end',
+          paddingTop: 10,
+          paddingBottom: 10,
+          paddingRight: 15,
+          paddingLeft: 10,
+        }}>
+        <SentTextReferTextMessageBar />
+      </View>
+
+      <View
+        style={{
+          backgroundColor: 'lightgrey',
+          display: 'flex',
+          flexDirection: 'row',
+          flexGrow: 1,
+          // width: '100%',
+          justifyContent: 'flex-start',
+          alignContent: 'flex-start',
+          alignItems: 'flex-start',
+          paddingTop: 10,
+          paddingBottom: 10,
+          paddingRight: 15,
+          paddingLeft: 10,
+        }}>
+        <RecievedTextReferTextMessageBar />
+      </View>
+
       <View
         style={{
           backgroundColor: '#FFF',
@@ -28,24 +66,117 @@ export const MessagesList = () => {
           paddingRight: 15,
           paddingLeft: 10,
         }}>
-        <SentMessageBar />
+        <SentImageMessageBar />
       </View>
+
       <View
         style={{
-          backgroundColor: 'lightgrey',
+          backgroundColor: '#FFF',
           display: 'flex',
           flexDirection: 'row',
           // flexGrow: 1,
           // width: '100%',
-          justifyContent: 'flex-start',
-          alignContent: 'flex-start',
-          alignItems: 'flex-start',
+          justifyContent: 'flex-end',
+          alignContent: 'flex-end',
+          alignItems: 'flex-end',
           paddingTop: 10,
           paddingBottom: 10,
           paddingRight: 15,
           paddingLeft: 10,
         }}>
-        <RecievedMessageBar />
+        <SentImageTextMessageBar />
+      </View>
+
+      <View
+        style={{
+          backgroundColor: '#FFF',
+          display: 'flex',
+          flexDirection: 'row',
+          // flexGrow: 1,
+          // width: '100%',
+          justifyContent: 'flex-end',
+          alignContent: 'flex-end',
+          alignItems: 'flex-end',
+          paddingTop: 10,
+          paddingBottom: 10,
+          paddingRight: 15,
+          paddingLeft: 10,
+        }}>
+        <SentVideoMessageBar />
+      </View>
+
+      <View
+        style={{
+          backgroundColor: '#FFF',
+          display: 'flex',
+          flexDirection: 'row',
+          // flexGrow: 1,
+          // width: '100%',
+          justifyContent: 'flex-end',
+          alignContent: 'flex-end',
+          alignItems: 'flex-end',
+          paddingTop: 10,
+          paddingBottom: 10,
+          paddingRight: 15,
+          paddingLeft: 10,
+        }}>
+        <SentVideoTextMessageBar />
+      </View>
+
+      <View
+        style={{
+          backgroundColor: '#FFF',
+          display: 'flex',
+          flexDirection: 'row',
+          flexGrow: 1,
+          flexShrink: 1,
+          width: '100%',
+          justifyContent: 'flex-end',
+          alignContent: 'flex-end',
+          alignItems: 'flex-end',
+          paddingTop: 10,
+          paddingBottom: 10,
+          paddingRight: 15,
+          paddingLeft: 10,
+        }}>
+        <SentTextReferImageTextMessageBar />
+      </View>
+
+      <View
+        style={{
+          backgroundColor: '#FFF',
+          display: 'flex',
+          flexDirection: 'row',
+          flexGrow: 1,
+          flexShrink: 1,
+          width: '100%',
+          justifyContent: 'flex-end',
+          alignContent: 'flex-end',
+          alignItems: 'flex-end',
+          paddingTop: 10,
+          paddingBottom: 10,
+          paddingRight: 15,
+          paddingLeft: 10,
+        }}>
+         <SentTextReferVideoTextMessageBar />
+      </View>
+
+      <View
+        style={{
+          backgroundColor: '#FFF',
+          display: 'flex',
+          flexDirection: 'row',
+          // flexGrow: 1,
+          // width: '100%',
+          justifyContent: 'flex-end',
+          alignContent: 'flex-end',
+          alignItems: 'flex-end',
+          paddingTop: 10,
+          paddingBottom: 10,
+          paddingRight: 15,
+          paddingLeft: 10,
+        }}>
+        <SentImageTextMessageBar />
       </View>
     </ScrollView>
   );
